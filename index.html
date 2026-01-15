@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soledad Manzano Páez</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="tool-popup" class="popup"> <!-- Para el post it amarillo de la homepage-->
+    <div id="popup-header" class="popup-header">// homepage.sys</div>
+    <div class="popup-content"> <!-- Para el post it amarillo dentro de los proyecto para meter la info-->
+      
+      <div id="contacto-fijo-proyecto" class="hidden"> <!-- Links para añadir y modificar para meter más información dentro del contacto-->
+        <p style="line-height: 2;">
+          <a href="mailto:solemanzanopaez@gmail.com" class="contacto-link">Email</a><br>
+          <a href="https://www.instagram.com/solee.archive?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="contacto-link">Instagram</a><br>
+          <a href="https://www.linkedin.com/in/soledad-manzano-paez-5865232b2" target="_blank" class="contacto-link">LinkedIn</a><br>
+          +34 644 90 80 16
+        </p>
+      </div>
+
+      <div id="filtros-home"> <!-- Para los filtros del post it amarillo de la homepage-->
+        <label style="display: block; margin-bottom: 8px;"><input type="checkbox" id="check-foto"> Foto del proyecto</label>
+        <label style="display: block; margin-bottom: 8px;"><input type="checkbox" id="check-info-pro"> Más info del proyecto</label>
+        <label style="display: block; margin-bottom: 8px;"><input type="checkbox" id="check-sobremi"> Sobre mí</label>
+        <label style="display: block; margin-bottom: 8px;"><input type="checkbox" id="check-contacto"> Contacto</label>
+        
+        <hr style="border:0; border-top:1px solid #000; margin: 12px 0;">
+      
+      <!-- Filtros de la homepage (este es el de AÑO)-->  
+        <label style="display: block; margin-bottom: 8px;"><input type="checkbox" id="check-years"> Por Año</label>
+        <div id="sub-years" class="hidden" style="margin-left:15px; display:flex; flex-direction:column; gap: 4px;">
+          <label><input type="radio" name="year" value="2023"> 2023</label>
+          <label><input type="radio" name="year" value="2024"> 2024</label>
+          <label><input type="radio" name="year" value="2025"> 2025</label>
+        </div>
+        
+        <!-- Filtros de la homepage (este es el de CATEGORÍAS)-->  
+        <label style="display: block; margin-top: 8px;"><input type="checkbox" id="check-agrupar"> Categorías</label>
+        <div id="sub-agrupar" class="hidden" style="margin-left:15px; display:flex; flex-direction:column; gap: 4px;"> <!-- Se cambian aquí los estilos, mirar forma de meter dentro de css-->  
+          <label><input type="radio" name="cat" value="Producto"> Producto</label>
+          <label><input type="radio" name="cat" value="Gráfico"> Gráfico</label>
+          <label><input type="radio" name="cat" value="Evento"> Evento</label>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<!-- Espacio para proyectos-->  
+  <div class="main-layout">
+    <h1 class="titulo-principal" onclick="router.home()">Soledad Manzano Páez</h1>
+    <div id="view-container"></div>
+  </div>
+  <!-- lINK PARA SCRIPT (mirar si se cambiara nombre, dejar así siempre para que no haya proiblemas)-->  
+  <script src="script.js"></script>
+</body>
+</html>
